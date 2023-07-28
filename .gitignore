@@ -1,0 +1,22 @@
+# Compiled class files
+*.class
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Java and Maven files
+/target/
+/.mvn/
+/mvnw
+/mvnw.cmd
+*.war
+*.ear
+*.jar
+*.iml
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
