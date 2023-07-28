@@ -12,7 +12,7 @@ public class TodoDAO {
     private EntityManager em;
 
     public TodoDAO() {
-        em = Persistence.createEntityManagerFactory("com.example.TodoPU").createEntityManager();
+        em = Persistence.createEntityManagerFactory("com.example.dao.TodoPU").createEntityManager();
     }
 
     public List<Todo> getAllTodos() {

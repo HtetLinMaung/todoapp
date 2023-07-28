@@ -4,7 +4,7 @@ This tutorial will guide you through the steps to create a simple RESTful API fo
 
 Before we start, make sure you have the following installed:
 
-- JDK 1.8 or above
+- JDK 11 or above
 - Maven
 - PostgreSQL server
 - Postman or curl (for testing the API)
