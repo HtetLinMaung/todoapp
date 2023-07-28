@@ -7,3 +7,21 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/yourDatabaseName
+      DB_USER: yourUsername
+      DB_PASS: yourPassword
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: yourDatabaseName
+      POSTGRES_USER: yourUsername
+      POSTGRES_PASSWORD: yourPassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
