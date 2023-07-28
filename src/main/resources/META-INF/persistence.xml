@@ -8,9 +8,9 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.url"
-                value="jdbc:postgresql://localhost:5432/yourDatabaseName" />
-            <property name="javax.persistence.jdbc.user" value="yourUsername" />
-            <property name="javax.persistence.jdbc.password" value="yourPassword" />
+                value="${DB_URL}" />
+            <property name="javax.persistence.jdbc.user" value="${DB_USER}" />
+            <property name="javax.persistence.jdbc.password" value="${DB_PASS}" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
         </properties>
