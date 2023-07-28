@@ -10,16 +10,16 @@ services:
     depends_on:
       - db
     environment:
-      DB_URL: jdbc:postgresql://db:5432/yourDatabaseName
-      DB_USER: yourUsername
-      DB_PASS: yourPassword
+      DB_URL: jdbc:postgresql://db:5432/postgres
+      DB_USER: hlm
+      DB_PASS: 1qaz!QAZ
 
   db:
     image: postgres:latest
     environment:
-      POSTGRES_DB: yourDatabaseName
-      POSTGRES_USER: yourUsername
-      POSTGRES_PASSWORD: yourPassword
+      POSTGRES_DB: postgres
+      POSTGRES_USER: hlm
+      POSTGRES_PASSWORD: 1qaz!QAZ
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
