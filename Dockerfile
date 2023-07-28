@@ -16,4 +16,4 @@ FROM tomcat:jdk11
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy the WAR file from the builder image into the webapps directory of the Tomcat image
-COPY --from=builder target/my-app.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=builder target/todoapp.war /usr/local/tomcat/webapps/ROOT.war
