@@ -10,11 +10,10 @@ services:
     depends_on:
       - db
     environment:
-      DB_URL: jdbc:postgresql://db:5432/postgres
+      DB_URL: jdbc:postgresql://postgres:5432/postgres
       DB_USER: hlm
       DB_PASS: 1qaz!QAZ
-
-  db:
+  postgres:
     image: postgres:latest
     environment:
       POSTGRES_DB: postgres
